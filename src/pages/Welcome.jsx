@@ -60,7 +60,7 @@ export default function Welcome({ onNext }) {
         </div>
 
         <h1 className="mb-5 text-4xl font-bold leading-tight text-[#d95d92] sm:text-5xl">
-          Hi, Sengkuu SulisSetiyani! ♡
+          Hi, Seng! ♡
         </h1>
 
         <p className="mx-auto mb-3 max-w-sm text-base font-semibold leading-relaxed text-[#a85c7b]">
