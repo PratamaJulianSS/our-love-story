@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+:root {
+  font-family: 'Quicksand', sans-serif;
+  color: #8f4667;
+  background: #fff0f6;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+::selection {
+  background: #ffc1da;
+  color: #9b365e;
+}
+
+@keyframes floatHeart {
+  0% {
+    transform: translateY(0) rotate(-10deg);
+    opacity: 0;
+  }
+
+  15% {
+    opacity: 0.65;
+  }
+
+  85% {
+    opacity: 0.65;
+  }
+
+  100% {
+    transform: translateY(-110vh) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+.floating-heart {
+  position: absolute;
+  bottom: -50px;
+  animation: floatHeart linear infinite;
+  pointer-events: none;
+}
