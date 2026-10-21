@@ -8,6 +8,8 @@ import LoveCounter from "./pages/LoveCounter";
 import LoveLetter from "./pages/LoveLetter";
 import Surprise from "./pages/Surprise";
 
+import MusicPlayer from "./components/MusicPlayer";
+
 export default function App() {
   const [page, setPage] = useState(0);
 
@@ -22,6 +24,8 @@ export default function App() {
 
   return (
     <div className="min-h-screen overflow-x-hidden">
+      <MusicPlayer />
+
       <AnimatePresence mode="wait">
         <motion.div
           key={page}
